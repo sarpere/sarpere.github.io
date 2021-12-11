@@ -1,70 +1,80 @@
-body{
-    margin:0;
-    box-sizing: border-box;
-    font-family: 'Press Start 2P', cursive;
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Press Start 2P", cursive;
 }
-.Profile{
-    min-height: 100vh;
-    display: inline-block;
-    position: relative;
-    width: 20%
+.Profile {
+  min-height: 100vh;
+  display: inline-block;
+  position: relative;
+  width: 20%;
 }
 
-.Profile img{
-    height: 50vh;
-    position: fixed;
-    left: 0;
-    bottom: 0;
+.Profile img {
+  height: 50vh;
+  position: fixed;
+  left: 0;
+  bottom: 0;
 }
-.Content{ 
-    min-height: 100vh;
-    width: 78%;
-    display: inline-flex;
-    justify-content: center;
-    flex-direction: column;
-    vertical-align: top;
+.Content {
+  min-height: 100vh;
+  width: 78%;
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+  vertical-align: top;
 }
-.Content>*{
-    margin: 15px 0; 
+.Content > * {
+  margin: 15px 0;
 }
 .socialMedia {
-    display: flex;
+  display: flex;
 }
-.socialMedia>* {
-    width: 30px;
-    height: auto;
-    margin: 5px 10px;
+.socialMedia > * {
+  width: 30px;
+  height: auto;
+  margin: 5px 10px;
 }
 
-.socialMedia>*:hover{
-    opacity: .7;
+.socialMedia > *:hover {
+  opacity: 0.7;
 }
 #footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 0 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0 10px;
 }
-#footer p{
-    margin-right:20px;
-    font-size: .6rem;
-    float: right;
+#footer p {
+  margin-right: 20px;
+  font-size: 0.6rem;
+  float: right;
 }
-
 
 @media only screen and (max-width: 800px) {
-    .Profile {
-      display: none;
-    }
-    .Content{
-        width: 100%;
-    }
-    .Content>*{
-        margin: 15px auto;
-        text-align: center;
-    }
+  .Profile {
+    display: none;
   }
+  .Content {
+    width: 100%;
+  }
+  .Content > * {
+    margin: 15px auto;
+    text-align: center;
+  }
+}
 
-  .Githubstat>img{
-    max-width: 90%;
-    }
+.Githubstat > img {
+  max-width: 90%;
+}
+.projects h2{
+    /* margin-bottom: 10px; */
+}
+.linkBtn{
+    background-color: midnightblue;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    width: max-content;    
+}

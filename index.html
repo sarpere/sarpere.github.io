@@ -1,73 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A Developer Onur Sarper EKinci">
-    <meta name="keywords" content="Personal page, Kişisel site, Developer, Geliştirici">
-    <meta name="author" content="Onur Sarper Ekinci">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A Developer Onur Sarper EKinci" />
+    <meta
+      name="keywords"
+      content="Personal page, Kişisel site, Developer, Geliştirici"
+    />
+    <meta name="author" content="Onur Sarper Ekinci" />
     <title>Sarper Ekinci</title>
     <link rel="shortcut icon" href="./favicon.ico" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="Profile">
-        <img alt="Onur Sarper EKINCI" src="./profileImage.png">
+      <img alt="Onur Sarper EKINCI" src="./profileImage.png" />
     </div>
     <div class="Content">
-        <p id="MainText"></p>
-        <div class="socialMedia">
-            <a href="https://github.com/sarpere">
-                <img src="/cgithub.svg" alt="Sarper Github" />
-            </a>
-            <a href="https://www.linkedin.com/in/onur-sarper-ekinci-7ba451127/">
-                <img src="/clinkedin.svg" alt="Sarper LinkedIn" />
-            </a>
-            <a href="https://www.instagram.com/sarperekinci/">
-                <img src="/cinstagram.svg" alt="Sarper Instagram" />
-            </a>
-            <a href="mailto:sarperekinci@hotmail.com">
-                <img src="/cmail.svg" alt="Sarper Mail" />
-            </a>
-        </div>
-        <div class="Githubstat">
-            <img src="https://github-readme-stats.vercel.app/api?username=sarpere&show_icons=true&theme=gruvbox"
-                alt="sarpereStat" /> <img
-                src="https://github-readme-stats.vercel.app/api/top-langs/?username=sarpere&layout=compact" valign="top"
-                alt="sarpere Top Langs" />
-        </div>
+      <p id="MainText"></p>
+      <div class="socialMedia">
+        <a href="https://github.com/sarpere">
+          <img src="/cgithub.svg" alt="Sarper Github" />
+        </a>
+        <a href="https://www.linkedin.com/in/onur-sarper-ekinci-7ba451127/">
+          <img src="/clinkedin.svg" alt="Sarper LinkedIn" />
+        </a>
+        <a href="https://www.instagram.com/sarperekinci/">
+          <img src="/cinstagram.svg" alt="Sarper Instagram" />
+        </a>
+        <a href="mailto:sarperekinci@hotmail.com">
+          <img src="/cmail.svg" alt="Sarper Mail" />
+        </a>
+      </div>
+      <div class="Githubstat">
+        <img
+          src="https://github-readme-stats.vercel.app/api?username=sarpere&show_icons=true&theme=gruvbox"
+          alt="sarpereStat"
+        />
+        <img
+          src="https://github-readme-stats.vercel.app/api/top-langs/?username=sarpere&layout=compact"
+          valign="top"
+          alt="sarpere Top Langs"
+        />
+      </div>
+      <div class="projects">
+        <h2>Projects</h2>
+        <a class="linkBtn" href="/Magic-Quadrant">Magic Quadrant</a>
+      </div>
     </div>
     <div id="footer">
-        <p> Onur Sarper Ekinci @2020</p>
+      <p>Onur Sarper Ekinci @2020</p>
     </div>
-</body>
+  </body>
 
-<script>
-    var app = document.getElementById('MainText');
+  <script>
+    var app = document.getElementById("MainText");
 
     var customNodeCreator = function (character) {
-        return document.createTextNode(character);
-    }
+      return document.createTextNode(character);
+    };
 
     var typewriter = new Typewriter(app, {
-        loop: true,
-        delay: 75,
-        onCreateTextNode: customNodeCreator,
+      loop: true,
+      delay: 75,
+      onCreateTextNode: customNodeCreator,
     });
     typewriter
-        .typeString("Hi, I'm Sarper.")
-        .pauseFor(1000)
-        .deleteChars(7)
-        .start()
-        .pauseFor(1000)
-        .typeString("A Developer.")
-        .pauseFor(1000)
-        ;
-</script>
-
+      .typeString("Hi, I'm Sarper.")
+      .pauseFor(1000)
+      .deleteChars(7)
+      .start()
+      .pauseFor(1000)
+      .typeString("A Developer.")
+      .pauseFor(1000);
+  </script>
 </html>
